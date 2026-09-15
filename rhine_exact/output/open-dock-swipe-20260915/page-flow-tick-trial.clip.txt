@@ -1,0 +1,38 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "KUSTOM_FLOW": {
+    "FgCBB7Me": {
+      "id": "FgCBB7Me",
+      "name": "Flow002",
+      "t": [
+        {
+          "id": "PageTrig",
+          "type": "T_FORMULA",
+          "params": {
+            "formula": "$if(gv(view)\u003e0,si(screen)+\":\"+df(ss),\"idle\")$",
+            "trigger": "ON_CHANGE"
+          }
+        }
+      ],
+      "a": [
+        {
+          "id": "ZeroView",
+          "type": "A_FORMULA",
+          "params": {
+            "formula": "$if(si(screen)\u003dgv(homepg) \u0026 gv(origin)\u003dsi(screen),gv(view),0)$"
+          }
+        },
+        {
+          "id": "ViewSync",
+          "type": "A_GLOBAL",
+          "params": {
+            "global": "view",
+            "store_mode": "TEXT"
+          }
+        }
+      ]
+    }
+  }
+}
+##KUSTOMCLIP##

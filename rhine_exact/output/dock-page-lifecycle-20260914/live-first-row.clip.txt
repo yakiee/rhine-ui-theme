@@ -1,0 +1,3048 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "终端 · 设备及电池信息",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "position_offset_y": 10,
+        "position_offset_x": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$130*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_y": "$(((-80*mu(min,1,si(sheight)*720/si(swidth)/1600))-34*mu(min,1,si(sheight)*720/si(swidth)/1600))+6*mu(min,1,si(sheight)*720/si(swidth)/1600))+(-10)*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_x": "$84*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$if(1,ALWAYS,REMOVE)$"
+      },
+      "config_rotate_mode": "FLIP_Y",
+      "config_rotate_offset": -15,
+      "internal_animations": [
+        {
+          "type": "FORMULA",
+          "formula": "$gv(page)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 4.8,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 0.86,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 52,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": 24,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "SCALE_XY",
+              "value": 0.91,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "X_OFFSET",
+              "value": 30,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "Y_OFFSET",
+              "value": 16,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "OPACITY",
+              "value": 60,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.974,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": 10,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": 5,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 18,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "SCALE_XY",
+              "value": 1.018,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "X_OFFSET",
+              "value": -4,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "Y_OFFSET",
+              "value": -2,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "SCALE_XY",
+              "value": 1.008,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "X_OFFSET",
+              "value": -1,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "Y_OFFSET",
+              "value": -0.5,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            }
+          ],
+          "internal_toggles": {
+            "duration": 10
+          },
+          "internal_formulas": {
+            "duration": "$if(gv(page)\u003d1,4.8,3.2)$"
+          }
+        },
+        {
+          "type": "GYRO",
+          "action": "SCROLL",
+          "axis": "XY",
+          "angle": 0,
+          "speed": 8,
+          "limit": 18,
+          "anchor": "MODULE_CENTER"
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm0)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": -0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": 0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": -0.812781816,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.9993321353599995,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": -0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": 0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": -0.812781816,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.9993321353599995,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm1)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": 0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": -0.16598181599999998,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.9993321353599995,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": 0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": -0.16598181599999998,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.9993321353599995,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm2)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": 0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": 0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": 0.480818184,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.9993321353599995,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": 0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -2.8561887647999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": 0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": 0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": 0.480818184,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.9993321353599995,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm3)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": -0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": -0.812781816,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.5583321353599997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": -0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": -0.812781816,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.5583321353599997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm4)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": -0.16598181599999998,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.5583321353599997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": -0.16598181599999998,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.5583321353599997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm5)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": 0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": 0.480818184,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.5583321353599997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -2.2261887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": 0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": 0.480818184,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.5583321353599997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm6)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": -0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": -0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": -0.812781816,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.1173321353599999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": -0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": -1.16111688,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": -0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": -0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": -0.812781816,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.1173321353599999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm7)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": -0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": -0.16598181599999998,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.1173321353599999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": -0.23711687999999997,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": -0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": -0.16598181599999998,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.1173321353599999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(pm8)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.6,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_Y",
+              "value": 0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "FLIP_X",
+              "value": -0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "X_OFFSET",
+              "value": 0.480818184,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": -1.1173321353599999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 22,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 50,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "SCALE_XY",
+              "value": 0.98614,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_Y",
+              "value": 0.756,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "FLIP_X",
+              "value": -0.588,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "X_OFFSET",
+              "value": 0.6868831200000001,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": -1.5961887648,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 60,
+              "property": "OPACITY",
+              "value": 1.68,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "SCALE_XY",
+              "value": 0.990298,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_Y",
+              "value": 0.5292,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "FLIP_X",
+              "value": -0.4115999999999999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "X_OFFSET",
+              "value": 0.480818184,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": -1.1173321353599999,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 78,
+              "property": "OPACITY",
+              "value": 1.176,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_Y",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "FLIP_X",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": -0.0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0.0,
+              "ease": "NORMAL"
+            }
+          ]
+        }
+      ],
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 720,
+          "shape_height": 1600,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 28.0,
+          "position_padding_bottom": 332.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_left": 110,
+                  "position_padding_top": 5.0,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 679.9999999999999,
+                      "shape_height": 164.0,
+                      "paint_color": "#04080D12"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_left": 110,
+                  "position_padding_top": 5.0,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 675.9999999999999,
+                      "shape_height": 160.0,
+                      "paint_color": "#07080D12"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_left": 110,
+                  "position_padding_top": 5.0,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 671.9999999999999,
+                      "shape_height": 156.0,
+                      "paint_color": "#0D080D12"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_left": 110,
+                  "viewgroup_items": [
+                    {
+                      "internal_title": "rect",
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 669.9999999999999,
+                      "shape_height": 154.0,
+                      "paint_color": "#DEFFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "internal_title": "定位容器",
+                  "position_padding_left": 291.19999999999993,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "PATH",
+                      "shape_width": 159.2092275132275,
+                      "shape_height": 149.68800000000002,
+                      "paint_color": "#1C616A6E",
+                      "shape_path": "M 12 0 L 32 0 L 32 16 L 43 16 L 43 0 L 63 0 L 63 16 L 75 16 L 75 0 L 95 0 L 90 32 L 77 41 L 77 72 L 90 87 L 90 100 L 10 100 L 10 87 L 23 72 L 23 41 L 8 30 Z M 37 40 L 63 40 L 63 73 L 37 73 Z",
+                      "shape_path_scale": "FIT_XY"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_left": 110,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "OverlapLayerModule",
+                      "internal_title": "纸面微纹理 · 边角点阵与淡色几何块",
+                      "viewgroup_items": [
+                        {
+                          "internal_type": "ShapeModule",
+                          "shape_type": "PATH",
+                          "shape_path": "M 0 0 L .001 .001 M 669.9999999999999 154.0 l -.001 -.001 M 471.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 70 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 76 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 82 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 88 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 94 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 100 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 519.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 525.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 531.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 537.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 543.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 549.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 555.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 561.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 567.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 573.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 579.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 585.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 591.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 597.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 603.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 609.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 615.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 621.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 627.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 633.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 639.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 645.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 651.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 657.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 663.380 106 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 363.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 112 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 112 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 363.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 118 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 118 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 363.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 124 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 124 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 363.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 130 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 130 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 363.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 136 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 136 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 363.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 142 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 142 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 363.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 369.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 375.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 381.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 387.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 393.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 399.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 405.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 411.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 417.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 423.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 429.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 435.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 441.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 447.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 453.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 459.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 465.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 471.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 477.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 483.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 489.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 495.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 501.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 507.380 148 a 0.62 0.62 0 1 0 1.24 0 a 0.62 0.62 0 1 0 -1.24 0 Z M 513.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 519.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 525.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 531.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 537.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 543.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 549.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 555.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 561.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 567.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 573.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 579.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 585.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 591.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 597.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 603.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 609.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 615.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 621.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 627.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 633.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 639.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 645.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 651.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 657.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z M 663.050 148 a 0.95 0.95 0 1 0 1.9 0 a 0.95 0.95 0 1 0 -1.9 0 Z",
+                          "shape_path_scale": "FIT_XY",
+                          "shape_width": 669.9999999999999,
+                          "shape_height": 154.0,
+                          "paint_color": "#245E6467"
+                        },
+                        {
+                          "internal_type": "ShapeModule",
+                          "shape_type": "PATH",
+                          "shape_path": "M 0 0 L .001 .001 M 669.9999999999999 154.0 l -.001 -.001 M 408.69999999999993 24.64 h 6 v 6 h -6 Z M 522.5999999999999 38.5 h 4 v 4 h -4 Z M 616.4 16.94 h 5 v 5 h -5 Z M 321.5999999999999 121.66000000000001 h 3 v 3 h -3 Z M 589.5999999999999 89.32 h 3 v 3 h -3 Z M 482.3999999999999 100.10000000000001 h 4 v 4 h -4 Z",
+                          "shape_path_scale": "FIT_XY",
+                          "shape_width": 669.9999999999999,
+                          "shape_height": 154.0,
+                          "paint_color": "#12555C60"
+                        },
+                        {
+                          "internal_type": "ShapeModule",
+                          "shape_type": "PATH",
+                          "shape_path": "M 0 0 L .001 .001 M 669.9999999999999 154.0 l -.001 -.001 M 60.29999999999999 120.12 h .8 v 24.64 h -.8 Z M 65.29999999999998 123.12 h .8 v 21.64 h -.8 Z M 70.29999999999998 126.12 h .8 v 18.64 h -.8 Z M 75.29999999999998 120.12 h .8 v 24.64 h -.8 Z M 80.29999999999998 123.12 h .8 v 21.64 h -.8 Z",
+                          "shape_path_scale": "FIT_XY",
+                          "shape_width": 669.9999999999999,
+                          "shape_height": 154.0,
+                          "paint_color": "#145D656A"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 190,
+          "position_padding_bottom": 184.16,
+          "internal_title": "终端橙线 · 贴合纸面下边缘",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 286,
+              "shape_height": 6,
+              "paint_color": "#FFFF762E"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 358.24,
+          "position_padding_bottom": 367.04,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "shape_type": "RECT",
+                  "shape_width": 176,
+                  "shape_height": 80,
+                  "paint_color": "#FFB8B8B8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 322,
+          "position_padding_bottom": 326.15999999999997,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "viewgroup_items": [
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_top": 4,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 190,
+                      "shape_height": 128,
+                      "paint_color": "#18000000"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "ShapeModule",
+                  "shape_type": "RECT",
+                  "shape_width": 186,
+                  "shape_height": 124,
+                  "fx_mask": "CLIP_NEXT"
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "BitmapModule",
+                      "bitmap_width": 186,
+                      "bitmap_height": 124,
+                      "bitmap_scale_mode": "CENTER_CROP",
+                      "internal_toggles": {
+                        "bitmap_bitmap": 10
+                      },
+                      "internal_formulas": {
+                        "bitmap_bitmap": "$gv(termcover)$"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_top": 101.0,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 186,
+                      "shape_height": 23,
+                      "paint_color": "#DE292929"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_top": 101.0,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "TextModule",
+                      "text_expression": "$gv(covertext)$",
+                      "text_size": 14,
+                      "text_width": 178,
+                      "text_size_type": "FIXED_WIDTH",
+                      "text_lines": 1,
+                      "text_align": "CENTER",
+                      "text_family": "kfile://org.kustom.sdcard/fonts/Roboto-Regular.ttf"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "机温 · 装饰加号",
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "position_padding_right": 532,
+              "position_padding_bottom": 367.04,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "shape_type": "CIRCLE",
+                  "shape_width": 32,
+                  "shape_height": 32,
+                  "paint_color": "#FF272B2E"
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "position_padding_right": 532,
+              "position_padding_bottom": 367.04,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "shape_type": "RECT",
+                  "shape_width": 15,
+                  "shape_height": 1.5
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "position_padding_right": 532,
+              "position_padding_bottom": 367.04,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "shape_type": "RECT",
+                  "shape_width": 1.5,
+                  "shape_height": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 92,
+          "position_padding_bottom": 289.64,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "shape_type": "RECT",
+                  "shape_width": 66,
+                  "shape_height": 25,
+                  "paint_color": "#FF373737",
+                  "shape_corners": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 92,
+          "position_padding_bottom": 289.64,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "TextModule",
+                  "text_expression": "系统",
+                  "text_width": 60,
+                  "text_size": 19,
+                  "text_size_type": "FIXED_WIDTH",
+                  "text_align": "CENTER",
+                  "text_lines": 1,
+                  "text_family": "kfile://org.kustom.sdcard/fonts/Rajdhani-SemiBold.ttf"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 10,
+          "position_padding_bottom": 384.24,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_title": "终端",
+                  "internal_type": "TextModule",
+                  "text_expression": "终端",
+                  "text_size": 60,
+                  "text_width": 156,
+                  "text_size_type": "FIXED_WIDTH",
+                  "text_lines": 1,
+                  "paint_color": "#FF12151B",
+                  "text_family": "kfile://org.kustom.sdcard/fonts/SourceHanSerifSC-Heavy.otf"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 10,
+          "position_padding_bottom": 233.2,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_title": "Android ",
+                  "internal_type": "TextModule",
+                  "text_expression": "Android $si(aver)$",
+                  "text_size": 24,
+                  "text_width": 156,
+                  "text_size_type": "FIXED_WIDTH",
+                  "text_lines": 1,
+                  "text_family": "kfile://org.kustom.sdcard/fonts/Roboto-Regular.ttf",
+                  "paint_color": "#FF22262E"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 358.24,
+          "position_padding_bottom": 242.8,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_title": "rect",
+                  "internal_type": "ShapeModule",
+                  "shape_type": "RECT",
+                  "shape_width": 176,
+                  "shape_height": 34,
+                  "paint_color": "#FF333333",
+                  "shape_corners": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 358.24,
+          "position_padding_bottom": 242.8,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_title": "电池 / °C",
+                  "internal_type": "TextModule",
+                  "text_expression": "机温 / °C",
+                  "text_size": 24,
+                  "text_width": 168,
+                  "text_size_type": "FIXED_WIDTH",
+                  "text_lines": 1,
+                  "text_align": "CENTER"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 358.24,
+          "position_padding_bottom": 367.04,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "config_scale_value": 96.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "position_padding_left": 2,
+                  "position_padding_top": 2.4,
+                  "viewgroup_items": [
+                    {
+                      "internal_title": "数字轻投影",
+                      "internal_type": "TextModule",
+                      "text_expression": "[i]$bi(tempc)$[/i]",
+                      "text_size": 76,
+                      "text_width": 184,
+                      "text_size_type": "FIXED_WIDTH",
+                      "text_lines": 1,
+                      "text_align": "CENTER",
+                      "text_family": "kfile://org.kustom.sdcard/fonts/Roboto-MediumItalic.ttf",
+                      "paint_color": "#32000000"
+                    }
+                  ]
+                },
+                {
+                  "internal_title": "text",
+                  "internal_type": "TextModule",
+                  "text_expression": "[i]$bi(tempc)$[/i]",
+                  "text_size": 76,
+                  "text_width": 184,
+                  "text_size_type": "FIXED_WIDTH",
+                  "text_lines": 1,
+                  "text_align": "CENTER",
+                  "text_family": "kfile://org.kustom.sdcard/fonts/Roboto-MediumItalic.ttf",
+                  "paint_color": "#FF12151B"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

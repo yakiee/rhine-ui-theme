@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "validation_scope": "ZIP/JSON/resource/global/formula-delimiter checks and independent date arithmetic; NOT Android import or Kustom formula execution",
+  "root_layers": 27,
+  "node_counts": {
+    "RootLayerModule": 1,
+    "BitmapModule": 14,
+    "OverlapLayerModule": 183,
+    "ShapeModule": 495,
+    "TextModule": 208
+  },
+  "formula_count": 1016,
+  "touch_action_count": 487,
+  "unique_resources": 15,
+  "reachable_page_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "calendar_month_cases": 60,
+  "unverified": [
+    "KLWP import on target device",
+    "Kustom formula engine results",
+    "launcher touch handling",
+    "media/calendar/weather permissions",
+    "payment links",
+    "animation timing and reverse transitions",
+    "screen cutout/navigation inset fit"
+  ],
+  "issues": []
+}

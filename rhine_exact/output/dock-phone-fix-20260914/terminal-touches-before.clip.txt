@@ -1,0 +1,3673 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "终端唯一入口与点击区域",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "position_offset_y": 10,
+        "position_offset_x": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$100*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_y": "$0$",
+        "position_offset_x": "$0$",
+        "config_visible": "$if(si(screen)\u003dgv(homepg),if(gv(page)\u003d1,ALWAYS,REMOVE),REMOVE)$"
+      },
+      "internal_animations": [
+        {
+          "type": "GYRO",
+          "action": "SCROLL",
+          "axis": "XY",
+          "angle": 0,
+          "speed": 8,
+          "limit": 18,
+          "anchor": "MODULE_CENTER"
+        }
+      ],
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 720,
+          "shape_height": 1600,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 325.3475177304965,
+          "position_padding_bottom": 362.47517730496435,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps0",
+                  "switch_text": "$1-gv(ps0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 161.61702127659572,
+          "position_padding_bottom": 362.47517730496435,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps1",
+                  "switch_text": "$1-gv(ps1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 2.113475177304857,
+          "position_padding_bottom": 362.47517730496435,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps2",
+                  "switch_text": "$1-gv(ps2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 325.3475177304965,
+          "position_padding_bottom": 289.5531914893618,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps3",
+                  "switch_text": "$1-gv(ps3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 161.61702127659572,
+          "position_padding_bottom": 289.5531914893618,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps4",
+                  "switch_text": "$1-gv(ps4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 2.113475177304857,
+          "position_padding_bottom": 289.5531914893618,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps5",
+                  "switch_text": "$1-gv(ps5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 325.3475177304965,
+          "position_padding_bottom": 216.63120567375873,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps6",
+                  "switch_text": "$1-gv(ps6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 161.61702127659572,
+          "position_padding_bottom": 216.63120567375873,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps7",
+                  "switch_text": "$1-gv(ps7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 2.113475177304857,
+          "position_padding_bottom": 216.63120567375873,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 81.86524822695036,
+              "shape_height": 36.46099290780142,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "ps8",
+                  "switch_text": "$1-gv(ps8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(search)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 200.0,
+          "position_padding_bottom": 355.6595744680851,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt0",
+                  "switch_text": "$1-gv(pt0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 365.95744680851067,
+          "position_padding_bottom": 355.6595744680851,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt1",
+                  "switch_text": "$1-gv(pt1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 531.9148936170213,
+          "position_padding_bottom": 355.6595744680851,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt2",
+                  "switch_text": "$1-gv(pt2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 200.0,
+          "position_padding_bottom": 287.5744680851064,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt3",
+                  "switch_text": "$1-gv(pt3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 365.95744680851067,
+          "position_padding_bottom": 287.5744680851064,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt4",
+                  "switch_text": "$1-gv(pt4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 531.9148936170213,
+          "position_padding_bottom": 287.5744680851064,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt5",
+                  "switch_text": "$1-gv(pt5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 200.0,
+          "position_padding_bottom": 219.48936170212767,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt6",
+                  "switch_text": "$1-gv(pt6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 365.95744680851067,
+          "position_padding_bottom": 219.48936170212767,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt7",
+                  "switch_text": "$1-gv(pt7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 531.9148936170213,
+          "position_padding_bottom": 219.48936170212767,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt8",
+                  "switch_text": "$1-gv(pt8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 207.8581560283688,
+          "position_padding_bottom": 97.56028368794333,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl0",
+                  "switch_text": "$1-gv(bl0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 115.48936170212772,
+          "position_padding_bottom": 97.56028368794333,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl1",
+                  "switch_text": "$1-gv(bl1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 23.12056737588654,
+          "position_padding_bottom": 97.56028368794333,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl2",
+                  "switch_text": "$1-gv(bl2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 207.8581560283688,
+          "position_padding_bottom": 27.659574468085125,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl3",
+                  "switch_text": "$1-gv(bl3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 115.48936170212772,
+          "position_padding_bottom": 27.659574468085125,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl4",
+                  "switch_text": "$1-gv(bl4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 23.12056737588654,
+          "position_padding_bottom": 27.659574468085125,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl5",
+                  "switch_text": "$1-gv(bl5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 207.8581560283688,
+          "position_padding_top": 42.241134751773075,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl6",
+                  "switch_text": "$1-gv(bl6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 115.48936170212772,
+          "position_padding_top": 42.241134751773075,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl7",
+                  "switch_text": "$1-gv(bl7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 23.12056737588654,
+          "position_padding_top": 42.241134751773075,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 46.184397163120565,
+              "shape_height": 34.95035460992908,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bl8",
+                  "switch_text": "$1-gv(bl8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 79.85815602836874,
+          "position_padding_bottom": 33.900709219858314,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc0",
+                  "switch_text": "$1-gv(bc0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 189.70212765957442,
+          "position_padding_bottom": 33.900709219858314,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc1",
+                  "switch_text": "$1-gv(bc1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 299.5460992907802,
+          "position_padding_bottom": 33.900709219858314,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc2",
+                  "switch_text": "$1-gv(bc2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 79.85815602836874,
+          "position_padding_top": 24.76595744680847,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc3",
+                  "switch_text": "$1-gv(bc3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 189.70212765957442,
+          "position_padding_top": 24.76595744680847,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc4",
+                  "switch_text": "$1-gv(bc4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 299.5460992907802,
+          "position_padding_top": 24.76595744680847,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc5",
+                  "switch_text": "$1-gv(bc5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 79.85815602836874,
+          "position_padding_top": 83.43262411347499,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc6",
+                  "switch_text": "$1-gv(bc6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 189.70212765957442,
+          "position_padding_top": 83.43262411347499,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc7",
+                  "switch_text": "$1-gv(bc7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 299.5460992907802,
+          "position_padding_top": 83.43262411347499,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.92198581560284,
+              "shape_height": 29.333333333333336,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "bc8",
+                  "switch_text": "$1-gv(bc8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(apay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 423.12056737588654,
+          "position_padding_bottom": 28.907801418439576,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br0",
+                  "switch_text": "$1-gv(br0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 541.7021276595746,
+          "position_padding_bottom": 28.907801418439576,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br1",
+                  "switch_text": "$1-gv(br1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 660.2836879432625,
+          "position_padding_bottom": 28.907801418439576,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br2",
+                  "switch_text": "$1-gv(br2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 423.12056737588654,
+          "position_padding_top": 32.25531914893608,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br3",
+                  "switch_text": "$1-gv(br3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 541.7021276595746,
+          "position_padding_top": 32.25531914893608,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br4",
+                  "switch_text": "$1-gv(br4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 660.2836879432625,
+          "position_padding_top": 32.25531914893608,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br5",
+                  "switch_text": "$1-gv(br5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 423.12056737588654,
+          "position_padding_top": 93.41843971631198,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br6",
+                  "switch_text": "$1-gv(br6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 541.7021276595746,
+          "position_padding_top": 93.41843971631198,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br7",
+                  "switch_text": "$1-gv(br7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 660.2836879432625,
+          "position_padding_top": 93.41843971631198,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 59.29078014184397,
+              "shape_height": 30.581560283687946,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "br8",
+                  "switch_text": "$1-gv(br8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(ascan)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 270.78014184397165,
+          "position_padding_top": 153.87234042553195,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp0",
+                  "switch_text": "$1-gv(pp0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 162.46808510638314,
+          "position_padding_top": 153.87234042553195,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp1",
+                  "switch_text": "$1-gv(pp1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 54.156028368794416,
+          "position_padding_top": 153.87234042553195,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp2",
+                  "switch_text": "$1-gv(pp2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 270.78014184397165,
+          "position_padding_top": 224.34042553191495,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp3",
+                  "switch_text": "$1-gv(pp3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 162.46808510638314,
+          "position_padding_top": 224.34042553191495,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp4",
+                  "switch_text": "$1-gv(pp4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 54.156028368794416,
+          "position_padding_top": 224.34042553191495,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp5",
+                  "switch_text": "$1-gv(pp5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 270.78014184397165,
+          "position_padding_top": 294.80851063829795,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp6",
+                  "switch_text": "$1-gv(pp6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 162.46808510638314,
+          "position_padding_top": 294.80851063829795,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp7",
+                  "switch_text": "$1-gv(pp7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 54.156028368794416,
+          "position_padding_top": 294.80851063829795,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 54.15602836879434,
+              "shape_height": 35.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pp8",
+                  "switch_text": "$1-gv(pp8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.DIAL;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 106.38297872340426,
+          "position_padding_top": 193.19148936170214,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf0",
+                  "switch_text": "$1-gv(pf0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 255.31914893617022,
+          "position_padding_top": 193.19148936170214,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf1",
+                  "switch_text": "$1-gv(pf1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 404.25531914893617,
+          "position_padding_top": 193.19148936170214,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf2",
+                  "switch_text": "$1-gv(pf2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 106.38297872340426,
+          "position_padding_top": 265.53191489361706,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf3",
+                  "switch_text": "$1-gv(pf3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 255.31914893617022,
+          "position_padding_top": 265.53191489361706,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf4",
+                  "switch_text": "$1-gv(pf4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 404.25531914893617,
+          "position_padding_top": 265.53191489361706,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf5",
+                  "switch_text": "$1-gv(pf5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 106.38297872340426,
+          "position_padding_top": 337.87234042553195,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf6",
+                  "switch_text": "$1-gv(pf6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 255.31914893617022,
+          "position_padding_top": 337.87234042553195,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf7",
+                  "switch_text": "$1-gv(pf7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 404.25531914893617,
+          "position_padding_top": 337.87234042553195,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 74.46808510638299,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pf8",
+                  "switch_text": "$1-gv(pf8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(fileapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 541.1347517730497,
+          "position_padding_top": 226.52482269503537,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw0",
+                  "switch_text": "$1-gv(pw0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 610.6382978723404,
+          "position_padding_top": 226.52482269503537,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw1",
+                  "switch_text": "$1-gv(pw1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 680.1418439716311,
+          "position_padding_top": 226.52482269503537,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw2",
+                  "switch_text": "$1-gv(pw2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 541.1347517730497,
+          "position_padding_top": 301.7021276595745,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw3",
+                  "switch_text": "$1-gv(pw3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 610.6382978723404,
+          "position_padding_top": 301.7021276595745,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw4",
+                  "switch_text": "$1-gv(pw4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 680.1418439716311,
+          "position_padding_top": 301.7021276595745,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw5",
+                  "switch_text": "$1-gv(pw5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 541.1347517730497,
+          "position_padding_top": 376.8794326241136,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw6",
+                  "switch_text": "$1-gv(pw6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 610.6382978723404,
+          "position_padding_top": 376.8794326241136,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw7",
+                  "switch_text": "$1-gv(pw7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 680.1418439716311,
+          "position_padding_top": 376.8794326241136,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 34.75177304964539,
+              "shape_height": 37.58865248226951,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pw8",
+                  "switch_text": "$1-gv(pw8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(wechat)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 234.04255319148936,
+          "position_padding_bottom": 899.7617021276596,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 251.06382978723406,
+              "shape_height": 46.808510638297875,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "detail",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 112.76595744680851,
+          "position_padding_bottom": 857.2085106382979,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 51.06382978723405,
+              "shape_height": 36.17021276595745,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.POWER_USAGE_SUMMARY;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 246.8085106382979,
+          "position_padding_bottom": 757.4468085106383,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 157.4468085106383,
+              "shape_height": 44.68085106382979,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.settings.DEVICE_INFO_SETTINGS;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 123.40425531914894,
+          "position_padding_bottom": 808.5106382978723,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 154.25531914893617,
+              "shape_height": 46.808510638297875,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.settings.APPLICATION_SETTINGS;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 489.3617021276596,
+          "position_padding_bottom": 855.3191489361702,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 200.0,
+              "shape_height": 46.808510638297875,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.settings.INTERNAL_STORAGE_SETTINGS;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 378.80851063829806,
+          "position_padding_bottom": 95.06382978723397,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 350.1276595744681,
+              "shape_height": 28.085106382978726,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$gv(alipay)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 297.36170212765956,
+          "position_padding_bottom": 675.3191489361703,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm0",
+                  "switch_text": "$1-gv(pm0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 166.6382978723403,
+          "position_padding_bottom": 675.3191489361703,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm1",
+                  "switch_text": "$1-gv(pm1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 35.91489361702127,
+          "position_padding_bottom": 675.3191489361703,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm2",
+                  "switch_text": "$1-gv(pm2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 297.36170212765956,
+          "position_padding_bottom": 566.3829787234043,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm3",
+                  "switch_text": "$1-gv(pm3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 166.6382978723403,
+          "position_padding_bottom": 566.3829787234043,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm4",
+                  "switch_text": "$1-gv(pm4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 35.91489361702127,
+          "position_padding_bottom": 566.3829787234043,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm5",
+                  "switch_text": "$1-gv(pm5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 297.36170212765956,
+          "position_padding_bottom": 457.4468085106383,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm6",
+                  "switch_text": "$1-gv(pm6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 166.6382978723403,
+          "position_padding_bottom": 457.4468085106383,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm7",
+                  "switch_text": "$1-gv(pm7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 35.91489361702127,
+          "position_padding_bottom": 457.4468085106383,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 65.36170212765957,
+              "shape_height": 54.46808510638298,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm8",
+                  "switch_text": "$1-gv(pm8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 147.91489361702125,
+          "position_padding_bottom": 699.1489361702128,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm0",
+                  "switch_text": "$1-gv(pm0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.settings.DEVICE_INFO_SETTINGS;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 372.5957446808511,
+          "position_padding_bottom": 699.1489361702128,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm1",
+                  "switch_text": "$1-gv(pm1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 597.2765957446809,
+          "position_padding_bottom": 699.1489361702128,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm2",
+                  "switch_text": "$1-gv(pm2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 147.91489361702125,
+          "position_padding_bottom": 580.6808510638299,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm3",
+                  "switch_text": "$1-gv(pm3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.settings.DEVICE_INFO_SETTINGS;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 372.5957446808511,
+          "position_padding_bottom": 580.6808510638299,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm4",
+                  "switch_text": "$1-gv(pm4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 597.2765957446809,
+          "position_padding_bottom": 580.6808510638299,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm5",
+                  "switch_text": "$1-gv(pm5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 147.91489361702125,
+          "position_padding_bottom": 462.2127659574468,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm6",
+                  "switch_text": "$1-gv(pm6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_ACTIVITY",
+                  "intent": "intent:#Intent;action\u003dandroid.settings.DEVICE_INFO_SETTINGS;end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 372.5957446808511,
+          "position_padding_bottom": 462.2127659574468,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm7",
+                  "switch_text": "$1-gv(pm7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 597.2765957446809,
+          "position_padding_bottom": 462.2127659574468,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 112.34042553191489,
+              "shape_height": 59.23404255319149,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pm8",
+                  "switch_text": "$1-gv(pm8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(galleryapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 200.0,
+          "position_padding_bottom": 355.6595744680851,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 1",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt0",
+                  "switch_text": "$1-gv(pt0)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 365.95744680851067,
+          "position_padding_bottom": 355.6595744680851,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 2",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt1",
+                  "switch_text": "$1-gv(pt1)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 531.9148936170213,
+          "position_padding_bottom": 355.6595744680851,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 3",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt2",
+                  "switch_text": "$1-gv(pt2)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 200.0,
+          "position_padding_bottom": 287.5744680851064,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 4",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt3",
+                  "switch_text": "$1-gv(pt3)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 365.95744680851067,
+          "position_padding_bottom": 287.5744680851064,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 5",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt4",
+                  "switch_text": "$1-gv(pt4)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 531.9148936170213,
+          "position_padding_bottom": 287.5744680851064,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 6",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt5",
+                  "switch_text": "$1-gv(pt5)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 200.0,
+          "position_padding_bottom": 219.48936170212767,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 7",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt6",
+                  "switch_text": "$1-gv(pt6)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 365.95744680851067,
+          "position_padding_bottom": 219.48936170212767,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 8",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt7",
+                  "switch_text": "$1-gv(pt7)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 531.9148936170213,
+          "position_padding_bottom": 219.48936170212767,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d1 \u0026 tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐自定义 App · 点击区 9",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 82.97872340425532,
+              "shape_height": 34.04255319148936,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pt8",
+                  "switch_text": "$1-gv(pt8)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

@@ -1,0 +1,152 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "终端 · 返回主页与主题配置",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$100*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$if(si(screen)\u003dgv(homepg) \u0026 gv(page)\u003d1,ALWAYS,REMOVE)$"
+      },
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 720,
+          "shape_height": 1600,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 492,
+          "position_padding_bottom": 1250,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 180,
+              "shape_height": 66,
+              "paint_color": "#C4172029"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 492,
+          "position_padding_bottom": 1250,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_expression": "‹ 返回",
+              "text_size": 28,
+              "text_width": 166,
+              "text_size_type": "FIXED_WIDTH",
+              "text_lines": 1,
+              "text_align": "CENTER"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 464,
+          "position_padding_bottom": 1250,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 150,
+              "shape_height": 66,
+              "paint_color": "#C4172029"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 464,
+          "position_padding_bottom": 1250,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_expression": "主题配置",
+              "text_size": 24,
+              "text_width": 140,
+              "text_size_type": "FIXED_WIDTH",
+              "text_lines": 1,
+              "text_align": "CENTER"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_right": 492,
+          "position_padding_bottom": 1250,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$ALWAYS$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 180,
+              "shape_height": 80,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "detail",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 464,
+          "position_padding_bottom": 1250,
+          "internal_title": "主题配置 · 打开 KLWP 编辑器",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 150,
+              "shape_height": 66,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "KUSTOM_ACTION",
+                  "kustom_action": "ADVANCED_EDITOR"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

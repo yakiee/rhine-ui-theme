@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "KUSTOM_GLOBAL": {"termcover": {"index": 220, "type": "BITMAP", "title": "终端 · 相册封面", "value": "kfile://org.kustom.sdcard/bitmaps/wall-reconstructed.png", "description": "独立选择第一行相册封面图片，按封面框居中裁切；不会更换桌面壁纸。", "global_formula": "", "key": "termcover"}}}
+##KUSTOMCLIP##

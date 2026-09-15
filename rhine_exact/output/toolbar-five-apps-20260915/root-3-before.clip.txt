@@ -1,0 +1,397 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "09 菱形层叠入口与侧面厚度",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "position_offset_y": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$100*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_y": "$-40*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$if(1,ALWAYS,REMOVE)$"
+      },
+      "internal_animations": [
+        {
+          "type": "FORMULA",
+          "formula": "$gv(page)\u003d0$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.0,
+          "delay": 0.0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 0,
+              "property": "SCALE_Y",
+              "value": 0.1,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 35,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 75,
+              "property": "SCALE_Y",
+              "value": 1.02,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_Y",
+              "value": 1,
+              "ease": "STRAIGHT"
+            }
+          ],
+          "internal_toggles": {
+            "duration": 10,
+            "delay": 10
+          },
+          "internal_formulas": {
+            "duration": "$if(gv(page)\u003d0,3.0,1.8)$",
+            "delay": "$if(gv(page)\u003d0,0.0,0)$"
+          }
+        },
+        {
+          "type": "GYRO",
+          "action": "SCROLL",
+          "axis": "XY",
+          "angle": 0,
+          "speed": 8,
+          "limit": 18,
+          "anchor": "MODULE_CENTER"
+        },
+        {
+          "type": "SCROLL",
+          "action": "ADVANCED",
+          "center": "SCREEN2",
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 12,
+              "property": "OPACITY",
+              "value": 20,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 30,
+              "property": "OPACITY",
+              "value": 75,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 45,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "STRAIGHT"
+            }
+          ],
+          "internal_toggles": {
+            "center": 10
+          },
+          "internal_formulas": {
+            "center": "$\"SCREEN\"+gv(homepg)$"
+          }
+        }
+      ],
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 720,
+          "shape_height": 1600,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 508,
+          "position_padding_top": 698.72,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 122,
+              "shape_height": 360.64000000000004,
+              "paint_color": "#90000000",
+              "shape_path": "M 0 8 L 50 0 L 100 8 L 100 92 L 50 100 L 0 92 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 502,
+          "position_padding_top": 684.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 116,
+              "shape_height": 351.44,
+              "paint_color": "#FF070B10",
+              "shape_path": "M 0 8 L 50 0 L 100 8 L 100 92 L 50 100 L 0 92 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 396.96,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 108,
+              "shape_height": 57.04,
+              "paint_color": "#FF242932",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 392,
+          "position_padding_top": 713.44,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 7,
+              "shape_height": 290.72,
+              "paint_color": "#FFFFC229",
+              "internal_toggles": {
+                "paint_color": 10
+              },
+              "internal_formulas": {
+                "paint_color": "$gv(accent)$"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 985.76,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 36.800000000000004,
+              "paint_color": "#FFFFC229",
+              "shape_path": "M 0 0 L 50 76 L 100 0 L 100 24 L 50 100 L 0 24 Z",
+              "shape_path_scale": "FIT_XY",
+              "internal_toggles": {
+                "paint_color": 10
+              },
+              "internal_formulas": {
+                "paint_color": "$gv(accent)$"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 544.16,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF1B2028",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 544.16,
+          "viewgroup_items": [
+            {
+              "internal_title": "W",
+              "internal_type": "BitmapModule",
+              "bitmap_bitmap": "kfile://org.kustom.sdcard/bitmaps/icon-weather.png",
+              "bitmap_width": 32,
+              "bitmap_height": 32,
+              "bitmap_scale_mode": "CENTER_CROP",
+              "bitmap_filter": "COLORIZE",
+              "internal_toggles": {
+                "bitmap_filter_color": 10
+              },
+              "internal_formulas": {
+                "bitmap_filter_color": "#FFFFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 661.92,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF262C35",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 661.92,
+          "viewgroup_items": [
+            {
+              "internal_title": "M",
+              "internal_type": "BitmapModule",
+              "bitmap_bitmap": "kfile://org.kustom.sdcard/bitmaps/icon-headphones.png",
+              "bitmap_width": 32,
+              "bitmap_height": 32,
+              "bitmap_scale_mode": "CENTER_CROP",
+              "bitmap_filter": "COLORIZE",
+              "internal_toggles": {
+                "bitmap_filter_color": 10
+              },
+              "internal_formulas": {
+                "bitmap_filter_color": "#FFFFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 779.6800000000001,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF1B2028",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 779.6800000000001,
+          "viewgroup_items": [
+            {
+              "internal_title": "C",
+              "internal_type": "BitmapModule",
+              "bitmap_bitmap": "kfile://org.kustom.sdcard/bitmaps/icon-calendar.png",
+              "bitmap_width": 32,
+              "bitmap_height": 32,
+              "bitmap_scale_mode": "CENTER_CROP",
+              "bitmap_filter": "COLORIZE",
+              "internal_toggles": {
+                "bitmap_filter_color": 10
+              },
+              "internal_formulas": {
+                "bitmap_filter_color": "#FFFFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 897.44,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF262C35",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "终端入口 · 四宫格",
+          "position_padding_left": 504,
+          "position_padding_top": 897.44,
+          "viewgroup_items": [
+            {
+              "internal_title": "⊞",
+              "internal_type": "BitmapModule",
+              "bitmap_bitmap": "kfile://org.kustom.sdcard/bitmaps/icon-apps.png",
+              "bitmap_width": 32,
+              "bitmap_height": 32,
+              "bitmap_scale_mode": "CENTER_CROP",
+              "bitmap_filter": "COLORIZE",
+              "internal_toggles": {
+                "bitmap_filter_color": 10
+              },
+              "internal_formulas": {
+                "bitmap_filter_color": "#FFFFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

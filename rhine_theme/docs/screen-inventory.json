@@ -1,0 +1,110 @@
+[
+  {
+    "id": "S01",
+    "name": "首页",
+    "source": "video_frames/frame_005.jpg",
+    "evidence": "docs\\evidence\\S01.jpg",
+    "location": "视频约 0.5–1.75s",
+    "observed": "时钟、人物壁纸、斜向电量/日期 Dock、功能侧栏；白色大分格属于壁纸",
+    "confidence": "visible"
+  },
+  {
+    "id": "S02",
+    "name": "控制中心",
+    "source": "animated_previews/f_000019/030.jpg",
+    "evidence": "docs\\evidence\\S02.jpg",
+    "location": "视频约 2.1–3.3s；动图 019",
+    "observed": "设备资源行、终端温度卡、搜索、设置、两行支付入口",
+    "confidence": "visible"
+  },
+  {
+    "id": "S03",
+    "name": "应用页",
+    "source": "animated_previews/f_000019/065.jpg",
+    "evidence": "docs\\evidence\\S03.jpg",
+    "location": "视频约 3.8–4.7s；动图 019",
+    "observed": "四列两行应用快捷入口，底部 Dock 转平并下移，侧栏隐藏",
+    "confidence": "visible"
+  },
+  {
+    "id": "S04",
+    "name": "天气总览",
+    "source": "animated_previews/f_00001b/005.jpg",
+    "evidence": "docs\\evidence\\S04.jpg",
+    "location": "动图 01b；视频后半段",
+    "observed": "多日曲线、左右翻页、空气质量、底部当天天气",
+    "confidence": "visible"
+  },
+  {
+    "id": "S05",
+    "name": "天气详情面板",
+    "source": "animated_previews/f_00001b/068.jpg",
+    "evidence": "docs\\evidence\\S05.jpg",
+    "location": "视频约 6.8–8.7s；动图 01b",
+    "observed": "曲线卡片右半部黑色详情，日期、天气、温度、风向",
+    "confidence": "visible"
+  },
+  {
+    "id": "S06",
+    "name": "音乐",
+    "source": "animated_previews/f_00001c/070.jpg",
+    "evidence": "docs\\evidence\\S06.jpg",
+    "location": "动图 01c 约 2.8s",
+    "observed": "横向封面、歌名/歌手、歌词区、进度与三个播放按钮",
+    "confidence": "visible"
+  },
+  {
+    "id": "S07",
+    "name": "日历",
+    "source": "animated_previews/f_000018/000.jpg",
+    "evidence": "docs\\evidence\\S07.jpg",
+    "location": "动图 018 首帧",
+    "observed": "周日起始月历、选择框、年进度、剩余天数、日程卡",
+    "confidence": "visible"
+  },
+  {
+    "id": "S08",
+    "name": "外观设置",
+    "source": "cache_media/f_00000e.jpg",
+    "evidence": "docs\\evidence\\S08.jpg",
+    "location": "小程序静态说明图左侧",
+    "observed": "光条风格、光点、壁纸取色模式、加载动画",
+    "confidence": "visible"
+  },
+  {
+    "id": "S09",
+    "name": "功能设置",
+    "source": "cache_media/f_00000e.jpg",
+    "evidence": "docs\\evidence\\S09.jpg",
+    "location": "小程序静态说明图右侧",
+    "observed": "深色模式、Dock样式、避开Dock、全屏返回、其他设置",
+    "confidence": "visible"
+  },
+  {
+    "id": "S10",
+    "name": "加载状态",
+    "source": "animated_previews/f_00001a/035.jpg",
+    "evidence": "docs\\evidence\\S10.jpg",
+    "location": "动图 01a 约 1.4s",
+    "observed": "壁纸洗色、扫描括号、双圆标志、进度、终端细字",
+    "confidence": "visible"
+  },
+  {
+    "id": "V01",
+    "name": "深色变体",
+    "source": "cache_media/f_000011.jpg",
+    "evidence": "docs\\evidence\\V01.jpg",
+    "location": "小程序深色宣传图",
+    "observed": "天气/音乐/日历深色适配，同功能不计新页面",
+    "confidence": "visible"
+  },
+  {
+    "id": "V02",
+    "name": "壁纸变体",
+    "source": "cache_media/f_000010.jpg",
+    "evidence": "docs\\evidence\\V02.jpg",
+    "location": "小程序壁纸自定义说明",
+    "observed": "金色、蓝紫色及不同人物壁纸，不计新页面",
+    "confidence": "visible"
+  }
+]

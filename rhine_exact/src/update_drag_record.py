@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('rhine_exact/src/record_drag_dock.py');s=p.read_text(encoding='utf-8-sig').replace('v0.13.49','v0.13.50').replace("out=base/'rhine_exact/output/drag-dock-v0.13.50/verification';adb", "out=base/'rhine_exact/output/drag-dock-v0.13.50/verification';out.mkdir(exist_ok=True);adb").replace("'12','/sdcard/Movies/dock-drag-v49.mp4'", "'20','/sdcard/Movies/dock-drag-v50.mp4'").replace('dock-drag-v49.mp4','dock-drag-v50.mp4').replace('[.5,1.5,2,2.5,3,4.5,6,7,9]','[.5,1.5,2,2.5,3,4.5,7,9,13]');p.write_text(s,encoding='utf-8')

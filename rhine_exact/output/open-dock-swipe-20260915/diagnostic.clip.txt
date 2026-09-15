@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "clip_modules": [{"internal_type": "OverlapLayerModule", "internal_title": "SWIPE DIAGNOSTIC REMOVE", "position_anchor": "TOP", "position_offset_y": 105, "viewgroup_items": [{"internal_type": "ShapeModule", "shape_type": "RECT", "shape_width": 620, "shape_height": 42, "paint_color": "#FF101010"}, {"internal_type": "TextModule", "text_expression": "S=$si(screen)$ H=$gv(homepg)$ P=$gv(page)$ V=$gv(view)$ $df(ss)$", "text_size": 23, "paint_color": "#FFFFFFFF"}]}]}
+##KUSTOMCLIP##

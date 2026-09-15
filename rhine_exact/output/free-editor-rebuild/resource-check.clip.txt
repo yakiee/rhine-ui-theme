@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "clip_modules": [{"internal_type": "BitmapModule", "internal_title": "SYNC RESOURCE CHECK", "bitmap_bitmap": "kfile://org.kustom.sdcard/bitmaps/wall-reconstructed.png", "bitmap_width": 100}]}
+##KUSTOMCLIP##

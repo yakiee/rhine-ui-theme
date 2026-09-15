@@ -1,0 +1,278 @@
+{
+  "applications": {
+    "type": "FORMULA",
+    "formula": "$gv(page)=2$",
+    "action": "ADVANCED",
+    "anchor": "MODULE_CENTER",
+    "duration": 3.2,
+    "ease": "NORMAL",
+    "animator": [
+      {
+        "position": 0,
+        "property": "OPACITY",
+        "value": 0,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 0,
+        "property": "SCALE_XY",
+        "value": 0,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 0,
+        "property": "X_OFFSET",
+        "value": 500,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 0,
+        "property": "Y_OFFSET",
+        "value": -250,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 25,
+        "property": "OPACITY",
+        "value": 100,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 25.0,
+        "property": "SCALE_XY",
+        "value": 49.091,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 25.0,
+        "property": "X_OFFSET",
+        "value": 241.236,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 25.0,
+        "property": "Y_OFFSET",
+        "value": -145.346,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 37.5,
+        "property": "SCALE_XY",
+        "value": 61.818,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 37.5,
+        "property": "X_OFFSET",
+        "value": 133.928,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 37.5,
+        "property": "Y_OFFSET",
+        "value": -106.51,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 50.0,
+        "property": "SCALE_XY",
+        "value": 83.636,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 50.0,
+        "property": "X_OFFSET",
+        "value": 54.254,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 50.0,
+        "property": "Y_OFFSET",
+        "value": -42.218,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 62.5,
+        "property": "SCALE_XY",
+        "value": 92.727,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 62.5,
+        "property": "X_OFFSET",
+        "value": 27.89,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 62.5,
+        "property": "Y_OFFSET",
+        "value": -20.764,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 75.0,
+        "property": "SCALE_XY",
+        "value": 94.545,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 75.0,
+        "property": "X_OFFSET",
+        "value": 15.418,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 75.0,
+        "property": "Y_OFFSET",
+        "value": -12.072,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 87.5,
+        "property": "SCALE_XY",
+        "value": 96.364,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 87.5,
+        "property": "X_OFFSET",
+        "value": 6.946,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 87.5,
+        "property": "Y_OFFSET",
+        "value": -5.382,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 100.0,
+        "property": "SCALE_XY",
+        "value": 98.182,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 100.0,
+        "property": "X_OFFSET",
+        "value": 2.472,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 100.0,
+        "property": "Y_OFFSET",
+        "value": -0.69,
+        "ease": "NORMAL"
+      }
+    ]
+  },
+  "dock": {
+    "type": "FORMULA",
+    "formula": "$gv(page)=2$",
+    "action": "ADVANCED",
+    "anchor": "MODULE_CENTER",
+    "duration": 3.2,
+    "ease": "NORMAL",
+    "animator": [
+      {
+        "position": 0.0,
+        "property": "ROTATE",
+        "value": 22.02,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 12.5,
+        "property": "ROTATE",
+        "value": 19.06,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 25.0,
+        "property": "ROTATE",
+        "value": 12.12,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 37.5,
+        "property": "ROTATE",
+        "value": 9.95,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 50.0,
+        "property": "ROTATE",
+        "value": 2.02,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 62.5,
+        "property": "ROTATE",
+        "value": 2.07,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 75.0,
+        "property": "ROTATE",
+        "value": 0.0,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 87.5,
+        "property": "ROTATE",
+        "value": 0,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 100,
+        "property": "ROTATE",
+        "value": 0,
+        "ease": "NORMAL"
+      }
+    ]
+  },
+  "music_cover": {
+    "type": "FORMULA",
+    "formula": "$gv(page)=4$",
+    "action": "ADVANCED",
+    "anchor": "MODULE_CENTER",
+    "duration": 3.6,
+    "delay": 7.6,
+    "ease": "NORMAL",
+    "animator": [
+      {
+        "position": 0,
+        "property": "SCALE_Y",
+        "value": 0,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 100,
+        "property": "SCALE_Y",
+        "value": 100,
+        "ease": "NORMAL"
+      }
+    ]
+  },
+  "forecast_card": {
+    "type": "FORMULA",
+    "formula": "$gv(page)=3$",
+    "action": "ADVANCED",
+    "anchor": "MODULE_CENTER",
+    "duration": 2.4,
+    "delay": 8,
+    "ease": "NORMAL",
+    "animator": [
+      {
+        "position": 0,
+        "property": "SCALE_X",
+        "value": 0,
+        "ease": "NORMAL"
+      },
+      {
+        "position": 100,
+        "property": "SCALE_X",
+        "value": 100,
+        "ease": "NORMAL"
+      }
+    ]
+  }
+}

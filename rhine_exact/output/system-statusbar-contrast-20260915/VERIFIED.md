@@ -1,0 +1,1 @@
+Top system statusbar scrim saved and visually verified. White time and status icons now have a dark translucent backing, fading into the unmodified wallpaper below. Dock date/time row unchanged. Native shapes only; no touch actions or animations added.

@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "KUSTOM_GLOBAL": {"page": {"index": 0, "type": "TEXT", "title": "page", "value": "$if(si(screen)!=gv(homepg),-1,gv(origin)=si(screen) & gv(view)>0,if(gv(view)=1,gv(docklive),gv(view)),0)$", "key": "page"}}}
+##KUSTOMCLIP##

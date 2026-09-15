@@ -1,0 +1,30 @@
+from pathlib import Path
+import subprocess,time,json
+ADB=str(Path('android-preview/sdk/platform-tools/adb.exe').resolve());OUT=Path('rhine_exact/output/matched-v0.5');(OUT/'screens').mkdir(exist_ok=True)
+def run(*args):
+ r=subprocess.run([ADB,'-s','emulator-5580',*args],capture_output=True,timeout=30)
+ if r.returncode:raise RuntimeError(r.stderr.decode(errors='replace'))
+ return r.stdout
+def tap(x,y,delay=1.3):run('shell','input','tap',str(x),str(y));time.sleep(delay)
+def shot(name):(OUT/'screens'/f'{name}.png').write_bytes(run('exec-out','screencap','-p'))
+rec=subprocess.Popen([ADB,'-s','emulator-5580','shell','screenrecord','--bit-rate','5000000','--time-limit','55','/sdcard/Movies/rhine-matched-v05.mp4'],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+start=time.monotonic();events=[];time.sleep(1);shot('00-home')
+def action(name,x,y,delay=1.3):
+ events.append({'name':name,'time_s':round(time.monotonic()-start,3),'x':x,'y':y});tap(x,y,delay);shot(name);print(name,flush=True)
+action('01-dock-menu',360,1390)
+action('02-settings-center',480,690)
+action('03-return-home',130,206)
+action('04-dock-menu',360,1390)
+action('05-settings-edge',450,675)
+action('06-return-home',130,206)
+action('07-apps',596,1184)
+action('08-apps-return',360,1390)
+action('09-weather',596,1015,2)
+action('10-weather-detail',184,438)
+action('11-detail-close',618,274)
+action('12-music',522,204)
+action('13-calendar',605,204)
+action('14-home',130,206)
+(OUT/'interaction-events.json').write_text(json.dumps(events,indent=2),encoding='utf8')
+rec.communicate(timeout=max(5,60-(time.monotonic()-start)))
+run('pull','/sdcard/Movies/rhine-matched-v05.mp4',str(OUT/'interaction-demo.mp4'));print('recorded',flush=True)

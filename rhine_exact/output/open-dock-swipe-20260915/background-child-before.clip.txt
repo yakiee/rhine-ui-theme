@@ -1,0 +1,26 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "BitmapModule",
+      "internal_title": "00 可替换壁纸 / 重力视差",
+      "bitmap_width": 720,
+      "bitmap_height": 1600,
+      "bitmap_scale_mode": "CENTER_CROP",
+      "bitmap_bitmap": "kfile://org.kustom.sdcard/bitmaps/wall-reconstructed.png",
+      "internal_toggles": {
+        "bitmap_bitmap": 10,
+        "bitmap_width": 10,
+        "bitmap_height": 10
+      },
+      "internal_formulas": {
+        "bitmap_bitmap": "$gv(wall)$",
+        "bitmap_width": "$si(rwidth)*1.08$",
+        "bitmap_height": "$si(rheight)*1.08$"
+      }
+    }
+  ]
+}
+##KUSTOMCLIP##

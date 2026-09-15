@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path('rhine_exact/output/interaction-cleanup-v0.13.43/操作说明.md')
+s=p.read_text(encoding='utf-8-sig').replace('v0.13.43','v0.13.46').replace('Rhine-UI-interaction-cleanup','Rhine-UI-native-desktop-navigation')
+s=s.replace('主屏向左滑进入终端，终端向右滑回到主屏。','斜条主页设在第 2 个桌面。手指向右划，进入左边第 1 个正常应用桌面；在应用桌面向左划回到斜条主页。桌面翻页不再打开终端。')
+s=s.replace('天气、音乐、日历、应用。','天气、音乐、日历、终端（四宫格）。点击四宫格在当前主题桌面展开终端，点击终端左上「返回」收起。')
+s=s.replace('回到进入前的桌面。','回到进入前的页面：从终端打开日历或音乐，返回终端；从斜条主页打开，则返回斜条主页。左右划到其他桌面时，主题界面自动收起。')
+s=s.replace('| 应用 | 点图标打开对应 App；左上返回桌面，右上「主题配置」打开 KLWP 编辑器。 |','| 原生应用桌面 | 点击启动器图标打开 App；长按移动、整理文件夹，上滑打开应用抽屉。这些图标由启动器管理，主题不会接管点击。 |\n| 终端 | Dock 四宫格展开；左上「返回」收起，右上「主题配置」进入 KLWP 编辑器。 |')
+s=s.replace('主屏右侧 Dock 点最下面的「应用」。','斜条主页右侧 Dock 点最下面的四宫格，打开终端。')
+s=s.replace('| `wall` | 主屏壁纸 |','| `homepg` | 斜条主页所在的桌面页码，默认 2；其他页只显示壁纸，交给启动器放 App |\n| `wall` | 主屏壁纸 |')
+s=s.replace('启动器需要保留两个桌面并启用壁纸滚动，左右滑动才能在主屏与终端之间切换。','启动器需要保留至少两个桌面并启用壁纸滚动。第 1 页放普通 App 图标，第 2 页留作斜条主页；若启动器支持默认主页，建议将第 2 页设为默认。其他页也可继续添加 App。主题内部的终端、天气、音乐、日历都在第 2 页打开，不占用新的启动器桌面。')
+Path('rhine_exact/output/native-desktop-navigation-v0.13.46/操作说明.md').write_text(s,encoding='utf-8')

@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "KUSTOM_FLOW": {"FzF1XDfR": {"id": "FzF1XDfR", "name": "Flow000", "t": [{"id": "PageTrig", "type": "T_FORMULA", "params": {"formula": "$if(gv(view)>0,si(screen)+\":\"+df(ss),\"idle\")$", "trigger": "ON_CHANGE"}}], "a": [{"id": "ZeroView", "type": "A_FORMULA", "params": {"formula": "$if(si(screen)=gv(homepg) & gv(origin)=si(screen),gv(view),0)$"}}, {"id": "ViewSync", "type": "A_GLOBAL", "params": {"global": "view", "store_mode": "TEXT"}}]}}}
+##KUSTOMCLIP##

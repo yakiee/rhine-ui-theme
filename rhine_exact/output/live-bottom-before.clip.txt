@@ -1,0 +1,1459 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "Dock 底板 · 桌面滚动同步",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "position_offset_y": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$100*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_y": "$(633-if(gv(avoid),90,0))*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$ALWAYS$"
+      },
+      "config_rotate_mode": "MANUAL",
+      "internal_animations": [
+        {
+          "type": "FORMULA",
+          "formula": "$gv(page)\u003c\u003d2 \u0026 gv(dock)!\u003d0$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 2.2,
+          "delay": 0.0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 35,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "STRAIGHT"
+            }
+          ],
+          "internal_toggles": {
+            "duration": 10,
+            "delay": 10
+          },
+          "internal_formulas": {
+            "duration": "$if(gv(page)\u003c\u003d2 \u0026 gv(dock)!\u003d0,2.2,1.8)$",
+            "delay": "$if(gv(page)\u003c\u003d2 \u0026 gv(dock)!\u003d0,0.0,0)$"
+          }
+        },
+        {
+          "type": "SCROLL",
+          "action": "ADVANCED",
+          "rule": "CENTER",
+          "center": "SCREEN2",
+          "speed": 100,
+          "amount": 100,
+          "anchor": "MODULE_CENTER",
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "ROTATE",
+              "value": -0.0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": 0.0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 1,
+              "property": "ROTATE",
+              "value": -0.237,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 1,
+              "property": "Y_OFFSET",
+              "value": 1.45,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 2,
+              "property": "ROTATE",
+              "value": -0.474,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 2,
+              "property": "Y_OFFSET",
+              "value": 2.9,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 3,
+              "property": "ROTATE",
+              "value": -0.711,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 3,
+              "property": "Y_OFFSET",
+              "value": 4.35,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 4,
+              "property": "ROTATE",
+              "value": -0.948,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 4,
+              "property": "Y_OFFSET",
+              "value": 5.8,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 5,
+              "property": "ROTATE",
+              "value": -1.185,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 5,
+              "property": "Y_OFFSET",
+              "value": 7.25,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 6,
+              "property": "ROTATE",
+              "value": -1.422,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 6,
+              "property": "Y_OFFSET",
+              "value": 8.7,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 7,
+              "property": "ROTATE",
+              "value": -1.659,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 7,
+              "property": "Y_OFFSET",
+              "value": 10.15,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 8,
+              "property": "ROTATE",
+              "value": -1.896,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 8,
+              "property": "Y_OFFSET",
+              "value": 11.6,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 9,
+              "property": "ROTATE",
+              "value": -2.133,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 9,
+              "property": "Y_OFFSET",
+              "value": 13.049999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 10,
+              "property": "ROTATE",
+              "value": -2.37,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 10,
+              "property": "Y_OFFSET",
+              "value": 14.5,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 11,
+              "property": "ROTATE",
+              "value": -2.6069999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 11,
+              "property": "Y_OFFSET",
+              "value": 15.95,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 12,
+              "property": "ROTATE",
+              "value": -2.844,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 12,
+              "property": "Y_OFFSET",
+              "value": 17.4,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 13,
+              "property": "ROTATE",
+              "value": -3.081,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 13,
+              "property": "Y_OFFSET",
+              "value": 18.85,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 14,
+              "property": "ROTATE",
+              "value": -3.318,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 14,
+              "property": "Y_OFFSET",
+              "value": 20.3,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 15,
+              "property": "ROTATE",
+              "value": -3.5549999999999997,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 15,
+              "property": "Y_OFFSET",
+              "value": 21.75,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 16,
+              "property": "ROTATE",
+              "value": -3.792,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 16,
+              "property": "Y_OFFSET",
+              "value": 23.2,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 17,
+              "property": "ROTATE",
+              "value": -4.029,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 17,
+              "property": "Y_OFFSET",
+              "value": 24.650000000000002,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 18,
+              "property": "ROTATE",
+              "value": -4.266,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 18,
+              "property": "Y_OFFSET",
+              "value": 26.099999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 19,
+              "property": "ROTATE",
+              "value": -4.503,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 19,
+              "property": "Y_OFFSET",
+              "value": 27.55,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 20,
+              "property": "ROTATE",
+              "value": -4.74,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 20,
+              "property": "Y_OFFSET",
+              "value": 29.0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 21,
+              "property": "ROTATE",
+              "value": -4.976999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 21,
+              "property": "Y_OFFSET",
+              "value": 30.45,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 22,
+              "property": "ROTATE",
+              "value": -5.2139999999999995,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 22,
+              "property": "Y_OFFSET",
+              "value": 31.9,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 23,
+              "property": "ROTATE",
+              "value": -5.4510000000000005,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 23,
+              "property": "Y_OFFSET",
+              "value": 33.35,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 24,
+              "property": "ROTATE",
+              "value": -5.688,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 24,
+              "property": "Y_OFFSET",
+              "value": 34.8,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 25,
+              "property": "ROTATE",
+              "value": -5.925,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 25,
+              "property": "Y_OFFSET",
+              "value": 36.25,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 26,
+              "property": "ROTATE",
+              "value": -6.162,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 26,
+              "property": "Y_OFFSET",
+              "value": 37.7,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 27,
+              "property": "ROTATE",
+              "value": -6.399,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 27,
+              "property": "Y_OFFSET",
+              "value": 39.150000000000006,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 28,
+              "property": "ROTATE",
+              "value": -6.636,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 28,
+              "property": "Y_OFFSET",
+              "value": 40.6,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 29,
+              "property": "ROTATE",
+              "value": -6.872999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 29,
+              "property": "Y_OFFSET",
+              "value": 42.05,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 30,
+              "property": "ROTATE",
+              "value": -7.109999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 30,
+              "property": "Y_OFFSET",
+              "value": 43.5,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 31,
+              "property": "ROTATE",
+              "value": -7.3469999999999995,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 31,
+              "property": "Y_OFFSET",
+              "value": 44.95,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 32,
+              "property": "ROTATE",
+              "value": -7.584,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 32,
+              "property": "Y_OFFSET",
+              "value": 46.4,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 33,
+              "property": "ROTATE",
+              "value": -7.821,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 33,
+              "property": "Y_OFFSET",
+              "value": 47.85,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 34,
+              "property": "ROTATE",
+              "value": -8.058,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 34,
+              "property": "Y_OFFSET",
+              "value": 49.300000000000004,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 35,
+              "property": "ROTATE",
+              "value": -8.295,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 35,
+              "property": "Y_OFFSET",
+              "value": 50.75,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 36,
+              "property": "ROTATE",
+              "value": -8.532,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 36,
+              "property": "Y_OFFSET",
+              "value": 52.199999999999996,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 37,
+              "property": "ROTATE",
+              "value": -8.769,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 37,
+              "property": "Y_OFFSET",
+              "value": 53.65,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 38,
+              "property": "ROTATE",
+              "value": -9.006,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 38,
+              "property": "Y_OFFSET",
+              "value": 55.1,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 39,
+              "property": "ROTATE",
+              "value": -9.243,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 39,
+              "property": "Y_OFFSET",
+              "value": 56.550000000000004,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 40,
+              "property": "ROTATE",
+              "value": -9.48,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": 58.0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 41,
+              "property": "ROTATE",
+              "value": -9.716999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 41,
+              "property": "Y_OFFSET",
+              "value": 59.449999999999996,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 42,
+              "property": "ROTATE",
+              "value": -9.953999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 42,
+              "property": "Y_OFFSET",
+              "value": 60.9,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 43,
+              "property": "ROTATE",
+              "value": -10.190999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 43,
+              "property": "Y_OFFSET",
+              "value": 62.35,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 44,
+              "property": "ROTATE",
+              "value": -10.427999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 44,
+              "property": "Y_OFFSET",
+              "value": 63.8,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 45,
+              "property": "ROTATE",
+              "value": -10.665,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 45,
+              "property": "Y_OFFSET",
+              "value": 65.25,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 46,
+              "property": "ROTATE",
+              "value": -10.902000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 46,
+              "property": "Y_OFFSET",
+              "value": 66.7,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 47,
+              "property": "ROTATE",
+              "value": -11.139,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 47,
+              "property": "Y_OFFSET",
+              "value": 68.14999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 48,
+              "property": "ROTATE",
+              "value": -11.376,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 48,
+              "property": "Y_OFFSET",
+              "value": 69.6,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 49,
+              "property": "ROTATE",
+              "value": -11.613,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 49,
+              "property": "Y_OFFSET",
+              "value": 71.05,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 50,
+              "property": "ROTATE",
+              "value": -11.85,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 50,
+              "property": "Y_OFFSET",
+              "value": 72.5,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 51,
+              "property": "ROTATE",
+              "value": -12.087,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 51,
+              "property": "Y_OFFSET",
+              "value": 73.95,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 52,
+              "property": "ROTATE",
+              "value": -12.324,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 52,
+              "property": "Y_OFFSET",
+              "value": 75.4,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 53,
+              "property": "ROTATE",
+              "value": -12.561,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 53,
+              "property": "Y_OFFSET",
+              "value": 76.85000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 54,
+              "property": "ROTATE",
+              "value": -12.798,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 54,
+              "property": "Y_OFFSET",
+              "value": 78.30000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 55,
+              "property": "ROTATE",
+              "value": -13.035,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 55,
+              "property": "Y_OFFSET",
+              "value": 79.75,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 56,
+              "property": "ROTATE",
+              "value": -13.272,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 56,
+              "property": "Y_OFFSET",
+              "value": 81.2,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 57,
+              "property": "ROTATE",
+              "value": -13.508999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 57,
+              "property": "Y_OFFSET",
+              "value": 82.64999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 58,
+              "property": "ROTATE",
+              "value": -13.745999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 58,
+              "property": "Y_OFFSET",
+              "value": 84.1,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 59,
+              "property": "ROTATE",
+              "value": -13.982999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 59,
+              "property": "Y_OFFSET",
+              "value": 85.55,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 60,
+              "property": "ROTATE",
+              "value": -14.219999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 60,
+              "property": "Y_OFFSET",
+              "value": 87.0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 61,
+              "property": "ROTATE",
+              "value": -14.456999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 61,
+              "property": "Y_OFFSET",
+              "value": 88.45,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 62,
+              "property": "ROTATE",
+              "value": -14.693999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 62,
+              "property": "Y_OFFSET",
+              "value": 89.9,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 63,
+              "property": "ROTATE",
+              "value": -14.931,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 63,
+              "property": "Y_OFFSET",
+              "value": 91.35,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 64,
+              "property": "ROTATE",
+              "value": -15.168,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 64,
+              "property": "Y_OFFSET",
+              "value": 92.8,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 65,
+              "property": "ROTATE",
+              "value": -15.405,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 65,
+              "property": "Y_OFFSET",
+              "value": 94.25,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 66,
+              "property": "ROTATE",
+              "value": -15.642,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 66,
+              "property": "Y_OFFSET",
+              "value": 95.7,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 67,
+              "property": "ROTATE",
+              "value": -15.879000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 67,
+              "property": "Y_OFFSET",
+              "value": 97.15,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 68,
+              "property": "ROTATE",
+              "value": -16.116,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 68,
+              "property": "Y_OFFSET",
+              "value": 98.60000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 69,
+              "property": "ROTATE",
+              "value": -16.352999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 69,
+              "property": "Y_OFFSET",
+              "value": 100.05,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 70,
+              "property": "ROTATE",
+              "value": -16.59,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 70,
+              "property": "Y_OFFSET",
+              "value": 101.5,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 71,
+              "property": "ROTATE",
+              "value": -16.826999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 71,
+              "property": "Y_OFFSET",
+              "value": 102.94999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 72,
+              "property": "ROTATE",
+              "value": -17.064,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 72,
+              "property": "Y_OFFSET",
+              "value": 104.39999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 73,
+              "property": "ROTATE",
+              "value": -17.301,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 73,
+              "property": "Y_OFFSET",
+              "value": 105.85,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 74,
+              "property": "ROTATE",
+              "value": -17.538,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 74,
+              "property": "Y_OFFSET",
+              "value": 107.3,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 75,
+              "property": "ROTATE",
+              "value": -17.775,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 75,
+              "property": "Y_OFFSET",
+              "value": 108.75,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 76,
+              "property": "ROTATE",
+              "value": -18.012,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 76,
+              "property": "Y_OFFSET",
+              "value": 110.2,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 77,
+              "property": "ROTATE",
+              "value": -18.249,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 77,
+              "property": "Y_OFFSET",
+              "value": 111.65,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 78,
+              "property": "ROTATE",
+              "value": -18.486,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 78,
+              "property": "Y_OFFSET",
+              "value": 113.10000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 79,
+              "property": "ROTATE",
+              "value": -18.723,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 79,
+              "property": "Y_OFFSET",
+              "value": 114.55000000000001,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 80,
+              "property": "ROTATE",
+              "value": -18.96,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 80,
+              "property": "Y_OFFSET",
+              "value": 116.0,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 81,
+              "property": "ROTATE",
+              "value": -19.197,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 81,
+              "property": "Y_OFFSET",
+              "value": 117.45,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 82,
+              "property": "ROTATE",
+              "value": -19.433999999999997,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 82,
+              "property": "Y_OFFSET",
+              "value": 118.89999999999999,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 83,
+              "property": "ROTATE",
+              "value": -19.671,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 83,
+              "property": "Y_OFFSET",
+              "value": 120.35,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 84,
+              "property": "ROTATE",
+              "value": -19.907999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 84,
+              "property": "Y_OFFSET",
+              "value": 121.8,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 85,
+              "property": "ROTATE",
+              "value": -20.145,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 85,
+              "property": "Y_OFFSET",
+              "value": 123.25,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 86,
+              "property": "ROTATE",
+              "value": -20.381999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 86,
+              "property": "Y_OFFSET",
+              "value": 124.7,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 87,
+              "property": "ROTATE",
+              "value": -20.619,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 87,
+              "property": "Y_OFFSET",
+              "value": 126.15,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 88,
+              "property": "ROTATE",
+              "value": -20.855999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 88,
+              "property": "Y_OFFSET",
+              "value": 127.6,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 89,
+              "property": "ROTATE",
+              "value": -21.093,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 89,
+              "property": "Y_OFFSET",
+              "value": 129.05,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 90,
+              "property": "ROTATE",
+              "value": -21.33,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 90,
+              "property": "Y_OFFSET",
+              "value": 130.5,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 91,
+              "property": "ROTATE",
+              "value": -21.567,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 91,
+              "property": "Y_OFFSET",
+              "value": 131.95000000000002,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 92,
+              "property": "ROTATE",
+              "value": -21.804000000000002,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 92,
+              "property": "Y_OFFSET",
+              "value": 133.4,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 93,
+              "property": "ROTATE",
+              "value": -22.041,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 93,
+              "property": "Y_OFFSET",
+              "value": 134.85,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 94,
+              "property": "ROTATE",
+              "value": -22.278,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 94,
+              "property": "Y_OFFSET",
+              "value": 136.29999999999998,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 95,
+              "property": "ROTATE",
+              "value": -22.514999999999997,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 95,
+              "property": "Y_OFFSET",
+              "value": 137.75,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 96,
+              "property": "ROTATE",
+              "value": -22.752,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 96,
+              "property": "Y_OFFSET",
+              "value": 139.2,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 97,
+              "property": "ROTATE",
+              "value": -22.988999999999997,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 97,
+              "property": "Y_OFFSET",
+              "value": 140.65,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 98,
+              "property": "ROTATE",
+              "value": -23.226,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 98,
+              "property": "Y_OFFSET",
+              "value": 142.1,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 99,
+              "property": "ROTATE",
+              "value": -23.462999999999997,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 99,
+              "property": "Y_OFFSET",
+              "value": 143.55,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "ROTATE",
+              "value": -23.7,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": 145.0,
+              "ease": "STRAIGHT"
+            }
+          ],
+          "internal_toggles": {
+            "center": 10
+          },
+          "internal_formulas": {
+            "center": "$\"SCREEN\"+gv(homepg)$"
+          }
+        },
+        {
+          "type": "GYRO",
+          "action": "SCROLL",
+          "axis": "XY",
+          "angle": 0,
+          "speed": 9,
+          "limit": 22,
+          "anchor": "MODULE_CENTER"
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(page)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 3.2,
+          "delay": 0,
+          "animator": [
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": 90,
+              "ease": "NORMAL"
+            }
+          ]
+        },
+        {
+          "type": "FORMULA",
+          "formula": "$gv(page)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 4.8,
+          "delay": 0,
+          "animator": [
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "Y_OFFSET",
+              "value": 80,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "OPACITY",
+              "value": 18,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": 290,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 58,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "Y_OFFSET",
+              "value": 555,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "OPACITY",
+              "value": 94,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "Y_OFFSET",
+              "value": 690,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": 720,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "NORMAL"
+            }
+          ],
+          "internal_toggles": {
+            "duration": 10
+          },
+          "internal_formulas": {
+            "duration": "$if(gv(page)\u003d1,4.8,3.6)$"
+          }
+        }
+      ],
+      "config_rotate_offset": 23.7,
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 1060,
+          "shape_height": 228,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_title": "rect",
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 1060,
+          "shape_height": 228,
+          "paint_color": "#ED242526"
+        },
+        {
+          "internal_type": "ShapeModule",
+          "internal_title": "深灰纸面上的轻微暖色反光",
+          "shape_type": "RECT",
+          "shape_width": 1060,
+          "shape_height": 228,
+          "paint_color": "#30423C33",
+          "fx_gradient": "VERTICAL",
+          "fx_gradient_width": 75,
+          "fx_gradient_offset": 32,
+          "fx_gradient_color": "#001C1D1F",
+          "internal_toggles": {
+            "paint_color": 10
+          },
+          "internal_formulas": {
+            "paint_color": "$if(gv(style)\u003d0,#30423C33,ce(gv(accent),alpha,12))$"
+          }
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "Dock 信息 · 首页显示",
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(gv(page)\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": []
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

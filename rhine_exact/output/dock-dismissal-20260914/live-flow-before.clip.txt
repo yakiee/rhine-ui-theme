@@ -1,0 +1,38 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "KUSTOM_FLOW": {
+    "FZLk51CD": {
+      "id": "FZLk51CD",
+      "name": "Flow001",
+      "t": [
+        {
+          "id": "DockVisibleTrigger",
+          "type": "T_FORMULA",
+          "params": {
+            "formula": "$si(visible)$",
+            "trigger": "ON_CHANGE"
+          }
+        }
+      ],
+      "a": [
+        {
+          "id": "DockVisibilityValue",
+          "type": "A_FORMULA",
+          "params": {
+            "formula": "$if(si(visible)\u003d0 \u0026 gv(view)\u003d1,0,gv(view))$"
+          }
+        },
+        {
+          "id": "DockVisibilityStore",
+          "type": "A_GLOBAL",
+          "params": {
+            "global": "view",
+            "store_mode": "TEXT"
+          }
+        }
+      ]
+    }
+  }
+}
+##KUSTOMCLIP##

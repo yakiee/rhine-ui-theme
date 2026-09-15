@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "KUSTOM_FLOW": {"DockLeaveDesktop": {"id": "DockLeaveDesktop", "name": "离开桌面时收起终端", "t": [{"id": "DockVisibleTrigger", "type": "T_FORMULA", "params": {"formula": "$si(visible)$", "trigger": "ON_CHANGE"}}], "a": [{"id": "DockVisibilityValue", "type": "A_FORMULA", "params": {"formula": "0"}}, {"id": "DockVisibilityStore", "type": "A_GLOBAL", "params": {"global": "view", "store_mode": "TEXT"}}]}}}
+##KUSTOMCLIP##

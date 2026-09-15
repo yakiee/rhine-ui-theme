@@ -1,0 +1,14 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "KUSTOM_ANIMATION": {
+    "3": {
+      "type": "FORMULA",
+      "action": "FADE",
+      "ease": "STRAIGHT",
+      "duration": 3.2,
+      "formula": "$if(gv(page)\u003d1,f,b)$"
+    }
+  }
+}
+##KUSTOMCLIP##

@@ -1,0 +1,293 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "09 菱形层叠入口与侧面厚度",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "position_offset_y": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$100*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_y": "$-40*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$if(si(screen)\u003dgv(homepg),if(gv(page)\u003d0,ALWAYS,REMOVE),REMOVE)$"
+      },
+      "internal_animations": [
+        {
+          "type": "SCROLL",
+          "action": "ADVANCED",
+          "center": "SCREEN2",
+          "anchor": "MODULE_CENTER",
+          "ease": "STRAIGHT",
+          "speed": 100,
+          "amount": 100,
+          "internal_toggles": {
+            "center": 10
+          },
+          "internal_formulas": {
+            "center": "$\"SCREEN\"+gv(homepg)$"
+          },
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_X",
+              "value": 1,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 0,
+              "property": "SCALE_Y",
+              "value": 1,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_X",
+              "value": 0.98,
+              "ease": "STRAIGHT"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_Y",
+              "value": 0.98,
+              "ease": "STRAIGHT"
+            }
+          ]
+        }
+      ],
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 720,
+          "shape_height": 1600,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 508,
+          "position_padding_top": 698.72,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 122,
+              "shape_height": 360.64000000000004,
+              "paint_color": "#90000000",
+              "shape_path": "M 0 8 L 50 0 L 100 8 L 100 92 L 50 100 L 0 92 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 502,
+          "position_padding_top": 684.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 116,
+              "shape_height": 351.44,
+              "paint_color": "#FF070B10",
+              "shape_path": "M 0 8 L 50 0 L 100 8 L 100 92 L 50 100 L 0 92 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 392,
+          "position_padding_top": 713.44,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 7,
+              "shape_height": 290.72,
+              "paint_color": "#FFFFC229",
+              "internal_toggles": {
+                "paint_color": 10
+              },
+              "internal_formulas": {
+                "paint_color": "$gv(accent)$"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 504,
+          "position_padding_top": 985.76,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 36.800000000000004,
+              "paint_color": "#FFFFC229",
+              "shape_path": "M 0 0 L 50 76 L 100 0 L 100 24 L 50 100 L 0 24 Z",
+              "shape_path_scale": "FIT_XY",
+              "internal_toggles": {
+                "paint_color": 10
+              },
+              "internal_formulas": {
+                "paint_color": "$gv(accent)$"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "电话 · 原生矢量图标",
+          "position_padding_left": 504,
+          "position_padding_top": 426,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF242B33",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            },
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 35,
+              "shape_height": 35,
+              "paint_color": "#FFF4F7F5",
+              "shape_path": "M 28 5 L 10 9 C -5 23 8 55 28 75 C 48 95 78 104 92 90 L 96 74 L 73 60 L 61 73 C 44 66 33 54 27 38 L 40 27 Z",
+              "shape_path_scale": "FIT_XY",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.2
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "信息 · 原生矢量图标",
+          "position_padding_left": 504,
+          "position_padding_top": 544,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF1C242C",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            },
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 35,
+              "shape_height": 35,
+              "paint_color": "#FFF4F7F5",
+              "shape_path": "M 15 8 L 85 8 Q 97 8 97 20 L 97 66 Q 97 80 85 80 L 44 80 L 20 98 L 20 80 L 15 80 Q 3 80 3 66 L 3 20 Q 3 8 15 8 Z M 25 33 L 75 33 M 25 54 L 61 54",
+              "shape_path_scale": "FIT_XY",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.2
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "浏览器 · 原生矢量图标",
+          "position_padding_left": 504,
+          "position_padding_top": 662,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF242B33",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            },
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 35,
+              "shape_height": 35,
+              "paint_color": "#FFF4F7F5",
+              "shape_path": "M 50 5 A 45 45 0 1 1 49.9 5 Z M 5 50 L 95 50 M 50 5 C 18 30 18 70 50 95 C 82 70 82 30 50 5",
+              "shape_path_scale": "FIT_XY",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.2
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "相机 · 原生矢量图标",
+          "position_padding_left": 504,
+          "position_padding_top": 780,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF1C242C",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            },
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 37,
+              "shape_height": 31,
+              "paint_color": "#FFF4F7F5",
+              "shape_path": "M 6 23 L 28 23 L 36 6 L 64 6 L 72 23 L 94 23 L 98 28 L 98 89 L 94 95 L 6 95 L 2 89 L 2 28 Z M 70 59 A 20 25 0 1 1 30 59 A 20 25 0 1 1 70 59 M 82 36 L 88 36",
+              "shape_path_scale": "FIT_XY",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.2
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "打开 Dock · 原生矢量图标",
+          "position_padding_left": 504,
+          "position_padding_top": 898,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#FF242B33",
+              "shape_path": "M 50 0 L 100 50 L 50 100 L 0 50 Z",
+              "shape_path_scale": "FIT_XY"
+            },
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 35,
+              "shape_height": 35,
+              "paint_color": "#FFF4F7F5",
+              "shape_path": "M 7 7 L 40 7 L 40 40 L 7 40 Z M 60 7 L 93 7 L 93 40 L 60 40 Z M 7 60 L 40 60 L 40 93 L 7 93 Z M 60 60 L 93 60 L 93 93 L 60 93 Z",
+              "shape_path_scale": "FIT_XY",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

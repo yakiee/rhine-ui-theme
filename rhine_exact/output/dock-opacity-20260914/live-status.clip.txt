@@ -1,0 +1,596 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "主菜单 · 设备状态",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "position_offset_y": 10,
+        "position_offset_x": 10,
+        "config_visible": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$130*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_y": "$-80*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "position_offset_x": "$84*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$if(si(screen)\u003dgv(homepg),ALWAYS,REMOVE)$"
+      },
+      "config_rotate_mode": "FLIP_Y",
+      "config_rotate_offset": -15,
+      "internal_animations": [
+        {
+          "type": "FORMULA",
+          "formula": "$gv(page)\u003d1$",
+          "action": "ADVANCED",
+          "anchor": "MODULE_CENTER",
+          "duration": 4.8,
+          "delay": 0,
+          "ease": "STRAIGHT",
+          "animator": [
+            {
+              "position": 0,
+              "property": "SCALE_XY",
+              "value": 0.86,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "X_OFFSET",
+              "value": 52,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "Y_OFFSET",
+              "value": 24,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 0,
+              "property": "OPACITY",
+              "value": 100,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "SCALE_XY",
+              "value": 0.91,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "X_OFFSET",
+              "value": 30,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "Y_OFFSET",
+              "value": 16,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 18,
+              "property": "OPACITY",
+              "value": 60,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "SCALE_XY",
+              "value": 0.974,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "X_OFFSET",
+              "value": 10,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "Y_OFFSET",
+              "value": 5,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 40,
+              "property": "OPACITY",
+              "value": 18,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "SCALE_XY",
+              "value": 1.018,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "X_OFFSET",
+              "value": -4,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "Y_OFFSET",
+              "value": -2,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 65,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "SCALE_XY",
+              "value": 1.008,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "X_OFFSET",
+              "value": -1,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "Y_OFFSET",
+              "value": -0.5,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 82,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "SCALE_XY",
+              "value": 1,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "X_OFFSET",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "Y_OFFSET",
+              "value": 0,
+              "ease": "NORMAL"
+            },
+            {
+              "position": 100,
+              "property": "OPACITY",
+              "value": 0,
+              "ease": "NORMAL"
+            }
+          ],
+          "internal_toggles": {
+            "duration": 10
+          },
+          "internal_formulas": {
+            "duration": "$if(gv(page)\u003d1,4.8,3.2)$"
+          }
+        },
+        {
+          "type": "GYRO",
+          "action": "SCROLL",
+          "axis": "XY",
+          "angle": 0,
+          "speed": 8,
+          "limit": 18,
+          "anchor": "MODULE_CENTER"
+        }
+      ],
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 720,
+          "shape_height": 1600,
+          "paint_color": "#00000000"
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "CPU 行 · 半透明黑色背景",
+          "position_padding_bottom": 626,
+          "position_padding_right": 36,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 620,
+              "shape_height": 38,
+              "paint_color": "#33000000"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 4,
+          "position_padding_bottom": 702.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_expression": "$df(yyyy/MM/dd HH:mm:ss)$",
+              "text_width": 218,
+              "text_size": 25,
+              "text_size_type": "FIXED_WIDTH",
+              "text_lines": 1,
+              "text_family": "kfile://org.kustom.sdcard/fonts/Rajdhani-SemiBold.ttf"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 382,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_expression": "CPU $if(rm(cused)\u003e\u003d0,mu(round,rm(cused))+\"%\",\"—\")$",
+              "text_width": 132,
+              "text_size": 25,
+              "text_size_type": "FIXED_WIDTH",
+              "text_align": "CENTER",
+              "text_lines": 1,
+              "text_family": "kfile://org.kustom.sdcard/fonts/Rajdhani-SemiBold.ttf"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 24,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_expression": "RAM $if(rm(mtot)\u003e0,mu(round,100*rm(mused)/rm(mtot))+\"%\",\"—\")$",
+              "text_width": 122,
+              "text_size": 25,
+              "text_size_type": "FIXED_WIDTH",
+              "text_align": "CENTER",
+              "text_lines": 1,
+              "text_family": "kfile://org.kustom.sdcard/fonts/Rajdhani-SemiBold.ttf"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 320,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_expression": "ROM $if(rm(fstot,int)\u003e0,mu(round,100*rm(fsused,int)/rm(fstot,int))+\"%\",\"—\")$",
+              "text_width": 104,
+              "text_size": 23,
+              "text_size_type": "FIXED_WIDTH",
+              "text_align": "CENTER",
+              "text_lines": 1,
+              "text_family": "kfile://org.kustom.sdcard/fonts/Rajdhani-SemiBold.ttf"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 540,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 48,
+              "shape_height": 40,
+              "paint_color": "#FF00B8E4",
+              "shape_path": "M 23 23 L 77 23 L 77 77 L 23 77 Z M 38 38 L 62 38 L 62 62 L 38 62 Z M 0 30 L 20 30 M 0 50 L 20 50 M 0 70 L 20 70 M 80 30 L 100 30 M 80 50 L 100 50 M 80 70 L 100 70 M 30 0 L 30 20 M 50 0 L 50 20 M 70 0 L 70 20 M 30 80 L 30 100 M 50 80 L 50 100 M 70 80 L 70 100",
+              "shape_path_scale": "FIT_XY",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.4
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_right": 182,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "CIRCLE",
+              "shape_width": 40,
+              "shape_height": 40,
+              "paint_color": "#FFFF4564",
+              "paint_style": "STROKE",
+              "paint_stroke": 2.8
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "定位容器",
+          "position_padding_left": 160,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "PATH",
+              "shape_width": 34,
+              "shape_height": 40,
+              "paint_color": "#FFFFCD32",
+              "shape_path": "M 20 0 L 100 0 L 100 100 L 0 100 L 0 20 Z",
+              "shape_path_scale": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "终端电量 · 清晰四格真实填充",
+          "position_padding_right": 290,
+          "position_padding_bottom": 702.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_title": "电池细外框",
+              "position_padding_right": 2,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "internal_title": "电池细外框",
+                  "shape_type": "RECT",
+                  "shape_width": 28,
+                  "shape_height": 16,
+                  "paint_style": "STROKE",
+                  "paint_stroke": 2
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_title": "右侧实心电极",
+              "position_padding_left": 29.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "internal_title": "右侧实心电极",
+                  "shape_type": "RECT",
+                  "shape_width": 3,
+                  "shape_height": 6
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_title": "电量实心格 1",
+              "position_padding_right": 20,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "internal_title": "电池格 1 · 空槽",
+                  "shape_type": "RECT",
+                  "shape_width": 4,
+                  "shape_height": 10,
+                  "paint_color": "#18FFFFFF"
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "internal_toggles": {
+                    "position_padding_right": 10
+                  },
+                  "internal_formulas": {
+                    "position_padding_right": "$4-(4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-0)))$"
+                  },
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "internal_title": "电池格 1 · 实际填充",
+                      "shape_type": "RECT",
+                      "shape_width": 4,
+                      "shape_height": 10,
+                      "internal_toggles": {
+                        "shape_width": 10,
+                        "paint_color": 10
+                      },
+                      "internal_formulas": {
+                        "shape_width": "$mu(max,0.001,4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-0)))$",
+                        "paint_color": "$if(mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-0))\u003e0,#FFFFFFFF,#00FFFFFF)$"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_title": "电量实心格 2",
+              "position_padding_right": 8,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "internal_title": "电池格 2 · 空槽",
+                  "shape_type": "RECT",
+                  "shape_width": 4,
+                  "shape_height": 10,
+                  "paint_color": "#18FFFFFF"
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "internal_toggles": {
+                    "position_padding_right": 10
+                  },
+                  "internal_formulas": {
+                    "position_padding_right": "$4-(4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-1)))$"
+                  },
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "internal_title": "电池格 2 · 实际填充",
+                      "shape_type": "RECT",
+                      "shape_width": 4,
+                      "shape_height": 10,
+                      "internal_toggles": {
+                        "shape_width": 10,
+                        "paint_color": 10
+                      },
+                      "internal_formulas": {
+                        "shape_width": "$mu(max,0.001,4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-1)))$",
+                        "paint_color": "$if(mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-1))\u003e0,#FFFFFFFF,#00FFFFFF)$"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_title": "电量实心格 3",
+              "position_padding_left": 4,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "internal_title": "电池格 3 · 空槽",
+                  "shape_type": "RECT",
+                  "shape_width": 4,
+                  "shape_height": 10,
+                  "paint_color": "#18FFFFFF"
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "internal_toggles": {
+                    "position_padding_right": 10
+                  },
+                  "internal_formulas": {
+                    "position_padding_right": "$4-(4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-2)))$"
+                  },
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "internal_title": "电池格 3 · 实际填充",
+                      "shape_type": "RECT",
+                      "shape_width": 4,
+                      "shape_height": 10,
+                      "internal_toggles": {
+                        "shape_width": 10,
+                        "paint_color": 10
+                      },
+                      "internal_formulas": {
+                        "shape_width": "$mu(max,0.001,4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-2)))$",
+                        "paint_color": "$if(mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-2))\u003e0,#FFFFFFFF,#00FFFFFF)$"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_title": "电量实心格 4",
+              "position_padding_left": 16,
+              "viewgroup_items": [
+                {
+                  "internal_type": "ShapeModule",
+                  "internal_title": "电池格 4 · 空槽",
+                  "shape_type": "RECT",
+                  "shape_width": 4,
+                  "shape_height": 10,
+                  "paint_color": "#18FFFFFF"
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "internal_toggles": {
+                    "position_padding_right": 10
+                  },
+                  "internal_formulas": {
+                    "position_padding_right": "$4-(4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-3)))$"
+                  },
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "internal_title": "电池格 4 · 实际填充",
+                      "shape_type": "RECT",
+                      "shape_width": 4,
+                      "shape_height": 10,
+                      "internal_toggles": {
+                        "shape_width": 10,
+                        "paint_color": 10
+                      },
+                      "internal_formulas": {
+                        "shape_width": "$mu(max,0.001,4*mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-3)))$",
+                        "paint_color": "$if(mu(max,0,mu(min,1,4*mu(max,0,mu(min,100,bi(level)))/100-3))\u003e0,#FFFFFFFF,#00FFFFFF)$"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "时间左侧细线",
+          "position_padding_right": 444,
+          "position_padding_bottom": 702.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "internal_title": "时间左侧细线",
+              "shape_type": "RECT",
+              "shape_width": 84,
+              "shape_height": 2.2,
+              "paint_color": "#E6FFFFFF"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "时间右侧细线",
+          "position_padding_left": 356,
+          "position_padding_bottom": 702.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "internal_title": "时间右侧细线",
+              "shape_type": "RECT",
+              "shape_width": 128,
+              "shape_height": 2.2,
+              "paint_color": "#E6FFFFFF"
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "internal_title": "资源行 · 最右侧深色短横线",
+          "position_padding_left": 522,
+          "position_padding_bottom": 626,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 62,
+              "shape_height": 3.2,
+              "paint_color": "#78000000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

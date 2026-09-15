@@ -1,0 +1,69 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "KUSTOM_FLOW": {
+    "FoU7EDtI": {
+      "id": "FoU7EDtI",
+      "name": "Flow001",
+      "t": [
+        {
+          "id": "DockVisibleTrigger",
+          "type": "T_FORMULA",
+          "params": {
+            "formula": "$si(visible)$",
+            "trigger": "ON_CHANGE"
+          }
+        }
+      ],
+      "a": [
+        {
+          "id": "DockVisibilityValue",
+          "type": "A_FORMULA",
+          "params": {
+            "formula": "0"
+          }
+        },
+        {
+          "id": "DockVisibilityStore",
+          "type": "A_GLOBAL",
+          "params": {
+            "global": "view",
+            "store_mode": "TEXT"
+          }
+        }
+      ]
+    },
+    "FzF1XDfR": {
+      "id": "FzF1XDfR",
+      "name": "Flow000",
+      "t": [
+        {
+          "id": "PageTrig",
+          "type": "T_FORMULA",
+          "params": {
+            "formula": "$si(screen)$",
+            "trigger": "ON_CHANGE"
+          }
+        }
+      ],
+      "a": [
+        {
+          "id": "ZeroView",
+          "type": "A_FORMULA",
+          "params": {
+            "formula": "$if(si(screen)\u003dgv(homepg) \u0026 gv(origin)\u003dsi(screen),gv(view),0)$"
+          }
+        },
+        {
+          "id": "ViewSync",
+          "type": "A_GLOBAL",
+          "params": {
+            "global": "view",
+            "store_mode": "TEXT"
+          }
+        }
+      ]
+    }
+  }
+}
+##KUSTOMCLIP##

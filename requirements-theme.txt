@@ -1,0 +1,4 @@
+# Optional layout/image-analysis dependencies; phone clipboard helpers use stdlib.
+Pillow>=10,<13
+numpy>=1.26,<3
+opencv-python>=4.8,<5

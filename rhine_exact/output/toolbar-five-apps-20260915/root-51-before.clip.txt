@@ -1,0 +1,345 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "internal_title": "交互区域 · 09 菱形层叠入口与侧面厚度",
+      "position_anchor": "CENTER",
+      "internal_toggles": {
+        "config_scale_value": 10,
+        "config_visible": 10,
+        "position_offset_y": 10
+      },
+      "internal_formulas": {
+        "config_scale_value": "$100*mu(min,1,si(sheight)*720/si(swidth)/1600)$",
+        "config_visible": "$if(si(screen)\u003dgv(homepg),if(gv(page)\u003d0,ALWAYS,REMOVE),REMOVE)$",
+        "position_offset_y": "$-40*mu(min,1,si(sheight)*720/si(swidth)/1600)$"
+      },
+      "internal_animations": [
+        {
+          "type": "GYRO",
+          "action": "SCROLL",
+          "axis": "XY",
+          "angle": 0,
+          "speed": 8,
+          "limit": 18,
+          "anchor": "MODULE_CENTER"
+        }
+      ],
+      "viewgroup_items": [
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 544.16,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "$gv(page)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "detail",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "3"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapx",
+                  "switch_text": "252.0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapy",
+                  "switch_text": "232.07999999999998"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pulse",
+                  "switch_text": "$1-gv(pulse)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 544.16,
+          "viewgroup_items": []
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 661.92,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(tc(len,gv(musicapp))\u003d0,ALWAYS,REMOVE)$"
+          },
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "$gv(page)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "detail",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "4"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapx",
+                  "switch_text": "252.0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapy",
+                  "switch_text": "290.96"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pulse",
+                  "switch_text": "$1-gv(pulse)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 661.92,
+          "viewgroup_items": []
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 779.6800000000001,
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "parent",
+                  "switch_text": "$if(gv(page)\u003c\u003d1,gv(page),gv(parent))$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "$gv(page)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "detail",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "5"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapx",
+                  "switch_text": "252.0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapy",
+                  "switch_text": "349.84000000000003"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pulse",
+                  "switch_text": "$1-gv(pulse)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 779.6800000000001,
+          "viewgroup_items": []
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 897.44,
+          "internal_title": "终端 · 在当前桌面展开",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "origin",
+                  "switch_text": "$si(screen)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "prev",
+                  "switch_text": "$gv(page)$"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "detail",
+                  "switch_text": "0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "view",
+                  "switch_text": "1"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapx",
+                  "switch_text": "252.0"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "tapy",
+                  "switch_text": "408.72"
+                },
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "SWITCH_GLOBAL",
+                  "switch": "pulse",
+                  "switch_text": "$1-gv(pulse)$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 897.44,
+          "viewgroup_items": []
+        },
+        {
+          "internal_type": "OverlapLayerModule",
+          "position_padding_left": 504.0,
+          "position_padding_top": 661.92,
+          "internal_toggles": {
+            "config_visible": 10
+          },
+          "internal_formulas": {
+            "config_visible": "$if(tc(len,gv(musicapp))\u003e0,ALWAYS,REMOVE)$"
+          },
+          "internal_title": "音乐 · 与终端共用自定义播放器",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 106,
+              "shape_height": 55.2,
+              "paint_color": "#00000000",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "OPEN_LINK",
+                  "url": "$\"android-app://\"+gv(musicapp)+\"#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;end\"$"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##

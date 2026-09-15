@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "KUSTOM_FLOW": {"FgCBB7Me": {"id": "FgCBB7Me", "name": "Flow002", "t": [{"id": "PageTrig", "type": "T_FORMULA", "params": {"formula": "$si(screen)$", "trigger": "ON_CHANGE"}}], "a": [{"id": "ZeroView", "type": "A_FORMULA", "params": {"formula": "0"}}, {"id": "ViewSync", "type": "A_GLOBAL", "params": {"global": "view", "store_mode": "TEXT"}}]}}}
+##KUSTOMCLIP##

@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "KUSTOM_GLOBAL": {"scene": {"index": 22, "type": "BITMAP", "title": "预报卡背景", "value": "kfile://org.kustom.sdcard/bitmaps/scene-reconstructed.png", "description": "参考画面AI清理重建的临时城市图片，可替换", "global_formula": "", "key": "scene"}}}
+##KUSTOMCLIP##

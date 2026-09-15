@@ -1,0 +1,3 @@
+##KUSTOMCLIP##
+{"clip_version": 1, "clip_modules": [{"internal_type": "TextModule", "internal_title": "桌面页码同步 · 无可视内容", "text_expression": "$si(screen)$:$gv(view)$:$df(ss)$", "text_size": 1, "paint_color": "#00FFFFFF", "position_anchor": "TOP", "position_offset_y": 105, "internal_events": []}]}
+##KUSTOMCLIP##
